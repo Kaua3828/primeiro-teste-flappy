@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxoo37p61jvlq"]
+
+[ext_resource type="Texture2D" uid="uid://dsnofr8ipxofo" path="res://yellowbird-upflap.png" id="1_ooiqd"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jxflk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wdoaq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ooiqd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="flappy" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+scale = Vector2(-1.26903, 1.29021)
+shape = SubResource("CapsuleShape2D_jxflk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.00422, 0.980791)
+sprite_frames = SubResource("SpriteFrames_wdoaq")

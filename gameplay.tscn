@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjgbw8pqri5h"]
+
+[ext_resource type="Texture2D" uid="uid://dver85s3pfav3" path="res://spr_bg.png" id="1_gplke"]
+
+[node name="gameplay" type="Node2D"]
+
+[node name="SprBg" type="Sprite2D" parent="."]
+position = Vector2(72, 127)
+texture = ExtResource("1_gplke")
